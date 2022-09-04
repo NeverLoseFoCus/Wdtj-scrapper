@@ -1,0 +1,32 @@
+<%- include("./baseHtml.ejs")  %> 
+
+<section class="api-container">
+    <h1 class="api-header">How to use our api?</h1>
+    <p class="api-body"><span class="block">first of all, all of the end points are going to start with /api/~ and you pass in data using querys.</span>
+        <span class="block">if you dont already know you will send a get request using the built in methods to send requests or any other librarys.</span> <br>
+        <span class="block">so to start off with an example see the following snippit using a library called [request-promise]:</span> <br>
+        <div class="code-block-container">
+            <div class="code-block">
+                <span style="color: rgb(160, 61, 206);">await</span> <span style="color: rgba(230, 218, 111, 0.932);">request(<span style="color: rgba(218, 133, 54, 0.815);">"https://wdtjscraper.herokuapp.com/api/youtube/channelid?channelId=UCO5POc5LnaDIMfAfU4JYl4g"</span>)</span>
+            </div>
+        </div>
+    </p>
+    <h1 class="api-header">End points</h1>
+    <ul class="api-body">
+        <li>GET /api/scraper?scraperApiKey=~~&url=~~&isJSON=true/false</li> <br>
+        <li>GET /api/youtube/channelid?channelId=~~</li>
+        <li>GET /api/youtube/channelid/playlists?channelId=~~</li>
+        <li>GET /api/youtube/channelid/activites?channelId=~~</li>
+        <li>GET /api/youtube/videoid?videoId=~~</li>
+        <li>GET /api/youtube/videoid/comments?videoId=~~</li> <br>
+        <li>GET /api/twitter/user?userName=~~</li>
+        <li>GET /api/twitter/post?postId=~~</li> <br>
+        <li>GET /api/reddit/subreddit?subreddit=~~</li>
+        <li>GET /api/reddit/post?subreddit=~~&postIdPostName=~~/~~</li>
+        <li>GET /api/reddit/post/uri?postUri=~~</li>
+        <li>GET /api/reddit/user?user=~~</li> <br>
+        <li>GET /api/amazon/product?scraperApiKey=~~&productId=~~</li>
+        <li>GET /api/amazon/product/reviews?scraperApiKey=~~&productId=~~</li>
+        <li>GET /api/amazon/store?scraperApiKey=~~&storeName=~~&storeId=~~ </li>
+    </ul>
+</section>

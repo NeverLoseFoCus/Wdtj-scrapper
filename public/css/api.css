@@ -1,0 +1,14 @@
+.api-container {
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+@media (max-width: 898px) {
+    .api-header {
+        font-size: 29px;
+    }
+    .api-body {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

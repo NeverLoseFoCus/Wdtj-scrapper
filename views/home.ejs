@@ -1,0 +1,42 @@
+<%- include("./baseHtml.ejs")  %> 
+
+<script src="../js/home.js" defer></script>
+
+
+<section class="home-container">
+    <img src="../imgs/WDTJ Scraper logo.png" alt="WDTJ scraper logo" class="Logo">
+    
+        <form action="/scraper/response" method="post">
+            <div class="input-container">
+                <input class="url-input" type="text" name="inputData" required>
+                <button class="url-submit-button">Scrap Url</button>
+            </div>
+            <p class="note">*Note: if your url not working try un checking json format checkbox*</p>
+            <label for="checkbox-toggle">JSON format?</label>
+            <input type="checkbox" id="checkbox-toggle" name="isJSON" value="isJSON">
+        </form>
+        
+</section>
+
+<h1 class="youtube-header">or</h1>
+
+<section class="icons-container">
+    <a href="/youtube"><i class="fa fa-youtube-play " style="font-size:48px;color:rgb(0, 140, 255)"></i></a>
+    <a href="/twitter"><i class="fa fa-twitter" style="font-size:40px;color:rgb(0, 140, 255)"></i></a>
+    <a href="/reddit"><i class="fa fa-reddit " style="font-size:40px;color:rgb(0, 140, 255)"></i></a>
+    <a href="/amazon"><i class="fa fa-amazon" style="font-size:40px;color:rgb(0, 140, 255)"></i></a>
+</section>
+
+<section class="home-about">
+    <div class="devider"></div>
+    <h1 class="home-about-header">free JSON data from apis - WDTJ Scraper</h1>
+    <p class="home-about-body"><span class="block">Our api lets you retrieve data from different brands such as 
+        youtube, reddit, twitter, amazon, and many more in the future.</span> <br>  and
+        you are not only limited to these brands you can also scrap any website!
+        but this feature depends on rather the website sends data or not.
+    </p>
+</section>
+
+
+
+

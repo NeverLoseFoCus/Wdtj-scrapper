@@ -1,0 +1,14 @@
+.twitter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.twitter-header {
+    margin-bottom: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

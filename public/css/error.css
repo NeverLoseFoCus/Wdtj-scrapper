@@ -1,0 +1,11 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.alert {
+    width: 80%;
+    text-align: center;
+}

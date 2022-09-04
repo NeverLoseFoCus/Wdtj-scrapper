@@ -1,0 +1,20 @@
+<%- include("./baseHtml.ejs")  %> 
+
+<section class="twitter-container">
+    <h1 class="twitter-header">Twitter <i class="fa fa-twitter" style="font-size:40px;color:rgb(0, 140, 255)"></i></h1>
+    <form action="/twitter/user/response" method="post">
+        <label for="channel-id" class="label">Enter a user name <p style="font-size: 15px; display: inline-block; color: rgb(116, 116, 116);">*see user data*</p></label>
+        <div class="input-container no-margin">
+            <input class="url-input" type="text" id="channel-id" name="twitterUserName" required>
+            <button class="url-submit-button">Submit</button>
+        </div>
+    </form>
+
+    <form action="/twitter/post/response" method="post">
+        <label for="channel-id" class="label">Enter a post id <p style="font-size: 15px; display: inline-block; color: rgb(116, 116, 116);">*see post data*</p></label>
+        <div class="input-container no-margin">
+            <input class="url-input" type="text" id="channel-id" name="twitterPostId" required>
+            <button class="url-submit-button">Submit</button>
+        </div>
+    </form>
+</section>

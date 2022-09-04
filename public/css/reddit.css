@@ -1,0 +1,34 @@
+.reddit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.reddit-header {
+    margin-bottom: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reddit-container form {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reddit-border {
+    border: 2px solid rgb(255, 51, 0);
+}
+
+.reddit-button {
+    background-color: rgb(255, 51, 0);
+}
+
+.reddit-button:hover {
+    background-color: rgb(177, 49, 18);
+}
